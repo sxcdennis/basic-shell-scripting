@@ -16,6 +16,8 @@ This guide assumes some prior expereince in the following:
 # Table of Contents
 - [Introduction ](https:# "Introduction ")
 
+- [Scripting Standards](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Scripting%20Standards.md "Scripting Standards")
+
 - [The First Script](https://github.com/sxcdennis/basic-shell-scripting/blob/master/The%20First%20Script.md "The First Script")
 
 - [Running Simple Tasks](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Running%20Simple%20Tasks.md "Running Simple Tasks")
