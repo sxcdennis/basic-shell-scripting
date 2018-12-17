@@ -76,6 +76,7 @@ cd /home/
 ll
 echo Hello
 ```
+
 This script will use the commands in the following order:
 <b>1st:</b> cd /home/
 <b>2nd:</b> ll
