@@ -78,5 +78,6 @@ echo "Number of user(s) logged in: `who | wc -l `"
 echo
 ```
 These are just some examples of basic tasks that can be ran into scripts. There will be a bit more complexity and functionalities later in the guide.
-Keep reading!
+<br>
+Keep reading!<br>
 [ < Back: The First Script ](https://github.com/sxcdennis/basic-shell-scripting/blob/master/The%20First%20Script.md) | [ Next: Variables >](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Variables.md "Variables")
