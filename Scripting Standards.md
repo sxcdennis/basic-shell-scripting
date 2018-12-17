@@ -77,10 +77,10 @@ ll
 echo Hello
 ```
 
-This script will use the commands in the following order:
-<b>1st:</b> cd /home/
-<b>2nd:</b> ll
-<b> 3rd: </b> echo Hello
+This script will use the commands in the following order: <br>
+<b>1st:</b> cd /home/ <br>
+<b>2nd:</b> ll <br>
+<b> 3rd: </b> echo Hello <br>
 
 
 
