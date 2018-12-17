@@ -18,4 +18,4 @@ For our first script, we'll just write a script that says "Hello World". Later, 
   echo 9. `hello` world
 ```
 
-[ < Back: Introduction ](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Scripting%20Standards.md) | [ Next: Running Simple Tasks >](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Running%20Simple%20Tasks.md)
+[ < Back: Scripting Standards ](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Scripting%20Standards.md) | [ Next: Running Simple Tasks >](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Running%20Simple%20Tasks.md)

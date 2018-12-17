@@ -61,6 +61,7 @@ mount -h
 # File Permissions & Execution
 All scripts must be able to read & execute by whomever needs to execute the script.
 To change permissions: ```#chmod a+rx script-name``` <b>or</b> ```#chmod 755 script-name```
+
 To execute the script:   ```/filepath/file-name``` <b>or if you are in the directory of script file</b> ``` ./file-name```
 
 # Sequence of scripts
@@ -75,7 +76,10 @@ cd /home/
 ll
 echo Hello
 ```
-This script will use the commands in the following order: <b>1st:</b> cd /home/ <b>2nd:</b> ll <b> 3rd: </b> echo Hello
+This script will use the commands in the following order:
+<b>1st:</b> cd /home/
+<b>2nd:</b> ll
+<b> 3rd: </b> echo Hello
 
 
 
