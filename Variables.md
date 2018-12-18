@@ -150,8 +150,13 @@ There are a set of variables that are already set for you already. They cannot h
   </tbody>
 </table>
 <br>
-The first set of variables are numbers. **$0** ,**$1 - $9**, and **$#**. All of them having different functionalities. <br>
-**$0:** Is the basename of the program that is called. Example: Your script name is **test1.sh** located in ```/home/scripts```, if you call the variable it would output ```/home/scripts/test1.sh```<br>
+
+The first set of variables are numbers. **$0** ,**$1 - $9**, and **$#**. All of them having different functionalities.
+<br>
+
+**$0:** Is the basename of the program that is called. Example: Your script name is **test1.sh** located in ```/home/scripts```, if you call the variable it would output ```/home/scripts/test1.sh```
+<br>
+
 **$1-$9:** These are whatever **named** parameters to which the script was called with.
 For example lets say I have a script named testpara1.sh :
 ```
@@ -160,17 +165,23 @@ echo "My First parameter is $1"
 echo "My Second parameter is $2"
 ```
 Now if you call the script without stating the parameters it would output:
-**Output:**<br>
+**Output:**
+<br>
 ```
 My First parameter is
 My Second parameter is
 ```
 Now try running the script with parameters. For example: ```./testpara1.sh Onepara TwoPara```
-**Output:**<br>
+**Output:**
+<br>
+
 ```
 My First parameter is Onepara
 My Second parameter is TwoPara
 ```
 **$#:** Displays the number of parameters. For example
+
+
+
 [< Back: Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks")
 | [Next: If then Statements >](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")
