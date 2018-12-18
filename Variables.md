@@ -125,6 +125,10 @@ There are a set of variables that are already set for you already. They cannot h
     <tr>
       <td>field 1</td>
       <td>value one</td>
+      <td>field 2</td>
+      <td>value 2</td>
+      <td>field 3</td>
+      <td>value 3</td>
     </tr>
   </tbody>
 </table>
