@@ -84,4 +84,4 @@ This script will use the commands in the following order: <br>
 
 
 
-[ < Back: Introduction ](https://sxcdennis.github.io/basic-shell-scripting/README) | [ Next: The First Script >](https://sxcdennis.github.io/basic-shell-scripting/The%20First%20Script "The First Script")
+[ < Back: Introduction ](https://sxcdennis.github.io/basic-shell-scripting/) | [ Next: The First Script >](https://sxcdennis.github.io/basic-shell-scripting/The%20First%20Script "The First Script")
