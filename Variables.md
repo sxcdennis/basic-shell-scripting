@@ -103,32 +103,49 @@ For example lets say you run the command ```#touch my file.file``` you would cre
 
 ## Special Variables
 There are a set of variables that are already set for you already. They cannot have values assigned to them.
-| Variable   |      Function      |
-|----------|:-------------:|
-| $0 | First word; that is, the command name. This will have the full pathname if it was found via a PATH search. |
-| $n |  Individual arguments on command line (positional parameters). The Bourne shell allows only nine parameters to be referenced directly (n = 1–9); Bash allows n to be greater than 9 if specified as ${n}.  |
-| $# | Number of command-line arguments. |
-| $@ | 	All arguments on command line, individually quoted (“$1” “$2” …).|
-| $* | All arguments on command line as one string (“$1 $2…”). The values are separated by the first character in $IFS.|
-| $! | Process number of last background command. |
-| $? | Exit value of last executed command. |
-| $- | A hyphen expands to the current option flags as specified upon invocation, by the set built-in command, or those set by the shell itself (such as the -i). |
-| $_ | 	The underscore variable is set at shell startup and contains the absolute file name of the shell or script being executed as passed in the argument list. Subsequently, it expands to the last argument to the previous command, after expansion. It is also set to the full pathname of each command executed and placed in the environment exported to that command. When checking mail, this parameter holds the name of the mail file. |
 <table>
   <thead>
     <tr>
-      <th>Test</th>
-      <th>Test2</th>
+      <th>Variable</th>
+      <th>Function</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>field 1</td>
-      <td>value one</td>
-      <td>field 2</td>
-      <td>value 2</td>
-      <td>field 3</td>
-      <td>value 3</td>
+      <td>$0 </td>
+      <td>First word; that is, the command name. This will have the full pathname if it was found via a PATH search</td>
+      <tr>
+      <td>$n</td>
+      <td>Individual arguments on command line (positional parameters). The Bourne shell allows only nine parameters to be referenced directly (n = 1–9); Bash allows n to be greater than 9 if specified as ${n}.</td>
+      </tr>
+      <tr>
+      <td> $# </td>
+      <td> Number of command-line arguments. </td>
+      </tr>
+      <tr>
+      <td> $@ </td>
+      <td>All arguments on command line, individually quoted (“$1” “$2” …)</td>
+      </tr>
+      <tr>
+      <td>$* </td>
+      <td>All arguments on command line as one string (“$1 $2…”). The values are separated by the first character in $IFS.</td>
+      </tr>
+      <tr>
+      <td> $!</td>
+      <td>Process number of last background command.</td>
+      </tr>
+      <tr>
+      <td>#?</td>
+      <td>Exit value of last executed command.</td>
+      </tr>
+      <tr>
+      <td>$-</td>
+      <td>A hyphen expands to the current option flags as specified upon invocation, by the set built-in command, or those set by the shell itself (such as the -i).</td>
+      </tr>
+      <tr>
+      <td> $_ </td>
+      <td>The underscore variable is set at shell startup and contains the absolute file name of the shell or script being executed as passed in the argument list. Subsequently, it expands to the last argument to the previous command, after expansion. It is also set to the full pathname of each command executed and placed in the environment exported to that command. When checking mail, this parameter holds the name of the mail file. </td>
+      </tr>
     </tr>
   </tbody>
 </table>
