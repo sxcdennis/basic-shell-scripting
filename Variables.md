@@ -127,7 +127,7 @@ There are a set of variables that are already set for you already. They cannot h
       </tr>
       <tr>
       <td> $IFS</td>
-      <td><b>Internal Field Separator</b>: The default value is <b>SPACE</b>, <b>TAB</b>and a <b>NEWLINE</b>. You can change this to whatever you want. </td>
+      <td><b>Internal Field Separator</b>: The default value is <b>SPACE</b>, <b>TAB</b> and a <b>NEWLINE</b>. You can change this to whatever you want. </td>
       </tr>
       <tr>
       <td>$* </td>
@@ -158,10 +158,8 @@ There are a set of variables that are already set for you already. They cannot h
 </table>
 <br>
 
-The first set of variables are numbers. **$0** ,**$1 - $9**, and **$#**. All of them having different functionalities.
-<br>
 
-**$0:** Is the basename of the program that is called. Example: Your script name is **test1.sh** located in ```/home/scripts```, if you call the variable it would output ```/home/scripts/test1.sh```
+**$0:** Will produce the pathname along with the filename. Example: Your script name is **test1.sh** located in ```/home/scripts```, if you call the variable it would output ```/home/scripts/test1.sh```
 <br>
 
 **$1-$9:** These are whatever **named** parameters to which the script was called with.
