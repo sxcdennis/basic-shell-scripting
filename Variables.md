@@ -160,6 +160,7 @@ There are a set of variables that are already set for you already. They cannot h
 
 
 **$0:** Will produce the pathname along with the filename.
+
 **Example:** Your script name is **test1.sh** located in ```/home/scripts```
 If you call the variable it would output ```/home/scripts/test1.sh```
 
@@ -173,6 +174,7 @@ echo "My First parameter is $1"
 echo "My Second parameter is $2"
 ```
 Now if you call the script without stating the parameters it would
+
 **Output:**
 
 ```
@@ -180,6 +182,7 @@ My First parameter is
 My Second parameter is
 ```
 Now try running the script with parameters. For example: ```./testpara1.bash Onepara TwoPara```
+
 **Output:**
 
 ```
@@ -188,7 +191,9 @@ My Second parameter is TwoPara
 ```
 
 Shell allows you to only go from 1-9 but you can go above 9 by using **{}** in bash.
+
 **For example:**
+
 **Input script:**
 ```
 #!/bin/bash
@@ -222,7 +227,9 @@ How many parameters total: 2
 
 
 **$@:** Displays all parameters stated on the command line.
+
 **Example:**
+
 **Input Script:**
 ```
 #!/bin/bash
@@ -233,7 +240,10 @@ echo "My second parameter is $2"
 echo "How many parameters total: $#"
 echo "All of the parameters are: $@"
 ```
-**Command Line:** ```#./displayall.bash para1 para2```
+**Command Line:**
+```
+#./displayall.bash para1 para2
+```
 
 **Output:**
 ```
@@ -246,6 +256,7 @@ All of the parameters are: para1 para2
 **$IFS:** Abbreviation for Internal Field Separator. The default value of it is either SPACE(spacebar), TAB and a New Line. You have the option to change this in a script as well.
 
 **Example 1:**
+
 **Input Script:**
 ```
 #!/bin/bash
@@ -257,7 +268,8 @@ read a b c
 echo "a is $a b is $b c is $c"
 ```
 **Command Line:**
-```#./IFS1.bash
+```
+#./IFS1.bash
 ```
 
 **Output:**
