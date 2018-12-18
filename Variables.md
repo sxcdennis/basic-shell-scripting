@@ -207,11 +207,17 @@ echo "This will be the 10th parameter ${10}"
 #./testpara10.bash 1 2 3 4 5 6 7 8 9 ten
 
 ```
-**Output:** ```This will be the 10th parameter ten```
+**Output:**
+```
+This will be the 10th parameter ten
+
+```
 
 
 **$#:** Displays the number of parameters.
+
 **For example:**
+
 **Input Script:**
 ```
 #!/bin/bash
@@ -294,6 +300,7 @@ aa-bb-cc
 a is aa b is bb c is cc
 ```
 Now if you wanted to run the script using either TAB or Space it would have a different output
+
 **Output:**
 ```
 Please input values separated by hyphens
@@ -302,6 +309,7 @@ a is aa bb cc b is c is
 ```
 
 Now lets see an example of using the default IFS and the newly one created.
+
 **Example2:**
 ```
 #!/bin/bash
@@ -344,6 +352,7 @@ Default IFS: x is AA y is BB z is CC
 You can play around with the above example to see how it works.
 Now lets say you want to use both the NEW IFS & Default IFS.
 You would just move the line ```IFS=$default_IFS``` to where all the top variables are listed.
+
 **Example3:**
 ```
 #!/bin/bash
