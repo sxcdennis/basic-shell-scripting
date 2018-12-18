@@ -5,29 +5,32 @@ For our first script, we'll just write a script that says "Hello World". Later, 
 # Hello World Script
 The following is a guide to create your first "Hello World" script:
 
-- First, create a directory for your scripts. Mine is located at /home/scripts ```#mkdir /home/scripts/```
+First, create a directory for your scripts. Mine is located at /home/scripts ```#mkdir /home/scripts/```
 
-- Go to the directory using cd. ```#cd /home/scripts```
+Go to the directory using cd. ```#cd /home/scripts```
 
--  Create the file and call it Helloworld1.bash ```#vi Helloworld1.bash```
+Create the file and call it Helloworld1.bash ```#vi Helloworld1.bash```
 
-- Add the following lines and then save:
+Add the following lines and then save:
 
-```#!/bin/bash
+```
+#!/bin/bash
 # Author: Dennis
 # Date Created: 12/12/2018
 # Description: This script will output "Hello World"
 # Date Modified: 12/13/2018
 
-echo Hello world```
+echo Hello world
+```
 
-- Make sure your file is executable ```#chmod a+rx Helloworld1.bash```
+Make sure your file is executable ```#chmod a+rx Helloworld1.bash```
 
-- Execute the script ```#./Helloworld1.bash```
+Execute the script ```#./Helloworld1.bash```
 
 Simple right? It just outputs Hello world to you!
 
 # Variations of Hello World
+
 Now we dig deeper into variations of Hello World and reasoning behind each one.
 Here is a script I created called <b> Helloworld2.bash:</b>
 
