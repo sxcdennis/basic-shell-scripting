@@ -32,7 +32,7 @@ Simple right? It just outputs Hello world to you!
 # Variations of Hello World
 
 Now we dig deeper into variations of Hello World and reasoning behind each one.
-Here is a script I created called * Helloworld2.bash:*
+Here is a script I created called ** Helloworld2.bash:**
 
 ```
 #!/bin/bash
@@ -53,16 +53,16 @@ Here is a script I created called * Helloworld2.bash:*
   echo 9. `Hello` world
 ```
 Now go into detail on what each one outputs: <br>
-*0.* This is from the first script Hello World.<br>
-*1.* Since the text is in quotes of *""* it outputs the exact text within the quotations<br>
-*2.* This applies the same as 1.<br>
-*3.*  This applies for 1 and 2<br>
-*4.*  Since ** * is a wildcard that matches anything in Unix/Linux it will produce an output of all file names located within the directory. Thus the output of ```hello filenames world```. Also take note that the comment is not shown in the output as well.<br>
-*5.* Notice how the ```"big"``` doesn't have quotations whereas the ```"*"``` does. <br>
-*6.* Looking back at *5* you can see that *big* was not in quotes so is *"Hello"* in this situation<br>
-*7.* This looks at the quotations and takes the spacing for it as well.<br>
-*8.* This has the same functionalities as *""*<br>
-*9.* Notice how this causes an error. The reason being is because anything withing the *``` `Hello` ```* are meant for commands.<br>
+**0.** This is from the first script Hello World.<br>
+**1.** Since the text is in quotes of **""** it outputs the exact text within the quotations<br>
+**2.** This applies the same as 1.<br>
+**3.**  This applies for 1 and 2<br>
+**4.**  Since **"*"** is a wildcard that matches anything in Unix/Linux it will produce an output of all file names located within the directory. Thus the output of ```hello filenames world```. Also take note that the comment is not shown in the output as well.<br>
+**5.** Notice how the ```"big"``` doesn't have quotations whereas the ```"*"``` does. <br>
+**6.** Looking back at **5** you can see that **big** was not in quotes so is **"Hello"** in this situation<br>
+**7.** This looks at the quotations and takes the spacing for it as well.<br>
+**8.** This has the same functionalities as **""**<br>
+**9.** Notice how this causes an error. The reason being is because anything withing the **``` `Hello` ```** are meant for commands.<br>
 
 Not bad right? All of this makes more sense later on when you look into details of scripts! Continue reading!
 
