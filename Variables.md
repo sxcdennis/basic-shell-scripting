@@ -159,13 +159,16 @@ There are a set of variables that are already set for you already. They cannot h
 <br>
 
 
-**$0:** Will produce the pathname along with the filename.
+## $0:
+Will produce the pathname along with the filename.
 
 **Example:** Your script name is **test1.sh** located in ```/home/scripts```
 If you call the variable it would output ```/home/scripts/test1.sh```
 
 
-**$n or $1-$9 or ${n}:** These are whatever **named** parameters to which the script was called with.
+##$n or $1-$9 or ${n}:
+
+These are whatever **named** parameters to which the script was called with.
 For example lets say I have a script named testpara1.sh :
 ```
 #!/bin/bash
@@ -214,7 +217,8 @@ This will be the 10th parameter ten
 ```
 
 
-**$#:** Displays the number of parameters.
+## $#:
+Displays the number of parameters.
 
 **For example:**
 
@@ -243,7 +247,8 @@ How many parameters total: 2
 ```
 
 
-**$@:** Displays all parameters stated on the command line.
+## $@:
+Displays all parameters stated on the command line.
 
 **Example:**
 
@@ -272,7 +277,8 @@ How many parameters total: 2
 All of the parameters are: para1 para2
 ```
 
-**$IFS:** Abbreviation for Internal Field Separator. The default value of it is either SPACE(spacebar), TAB and a New Line. You have the option to change this in a script as well.
+## $IFS:
+Abbreviation for Internal Field Separator. The default value of it is either SPACE(spacebar), TAB and a New Line. You have the option to change this in a script as well.
 
 **Example 1:**
 
@@ -437,7 +443,8 @@ This is with *:
 one two three four
 ```
 
-**$$:** Process number of current running shell.
+## $$:
+Process number of current running shell.
 
 **Example:**
 
@@ -447,7 +454,8 @@ one two three four
 
 **Output:**
 
-**$!:** Number of last background process.
+## $!:
+Number of last background process.
 
 **Example:**
 
@@ -458,7 +466,9 @@ one two three four
 
 **Output:**
 
-**$?:** Exit value of last executed command.
+## $?:
+
+Exit value of last executed command.
 
 **Example:**
 
@@ -469,7 +479,9 @@ one two three four
 **Output:**
 
 
-**$-:** Prints current options/flags in current shell or those set by user (Examples: -i, -h).
+## $-:
+
+Prints current options/flags in current shell or those set by user (Examples: -i, -h).
 
 **Example:**
 
@@ -480,7 +492,9 @@ one two three four
 **Output:**
 
 
-**$_:** In a script, it will execute previous command argument.
+## $_:
+
+In a script, it will execute previous command argument.
 
 **Example:**
 
