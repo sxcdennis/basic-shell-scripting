@@ -98,11 +98,24 @@ echo End of Script
 ```
 Notice how the variable for the previous example is closed by curly braces **{}**<br>
 If you were to use it without the curly braces, it would just think that you're variable is ```$NAME1.file``` instead of ```$NAME1``` <br>
-Also notice that there are double quotes**""** between commands. This is because without the quotes the arguments for the command would run differently.<br>
+Also notice that there are double quotes **""** between commands. This is because without the quotes the arguments for the command would run differently.<br>
 For example lets say you run the command ```#touch my file.file``` you would create **two** files: my and file.file vs ```#touch "my file.file"``` which would create **one** file: my file.file
 
 ## Special Variables
-There are a set of variables that are already set for you already. They cannot have values assigned to them. <br>
+There are a set of variables that are already set for you already. They cannot have values assigned to them.
+| Variable   |      Function      |
+|----------|:-------------:|
+| $0 | First word; that is, the command name. This will have the full pathname if it was found via a PATH search. |
+| $n |  Individual arguments on command line (positional parameters). The Bourne shell allows only nine parameters to be referenced directly (n = 1–9); Bash allows n to be greater than 9 if specified as ${n}.  |
+| $# | Number of command-line arguments. |
+| $@ | 	All arguments on command line, individually quoted (“$1” “$2” …).|
+| $* | All arguments on command line as one string (“$1 $2…”). The values are separated by the first character in $IFS.|
+| $! | Process number of last background command. |
+| $? | Exit value of last executed command. |
+| $- | A hyphen expands to the current option flags as specified upon invocation, by the set built-in command, or those set by the shell itself (such as the -i). |
+| $_ | 	The underscore variable is set at shell startup and contains the absolute file name of the shell or script being executed as passed in the argument list. Subsequently, it expands to the last argument to the previous command, after expansion. It is also set to the full pathname of each command executed and placed in the environment exported to that command. When checking mail, this parameter holds the name of the mail file. |
+
+<br>
 The first set of variables are numbers. **$0** ,**$1 - $9**, and **$#**. All of them having different functionalities. <br>
 **$0:** Is the basename of the program that is called. Example: Your script name is **test1.sh** located in ```/home/scripts```, if you call the variable it would output ```/home/scripts/test1.sh```<br>
 **$1-$9:** These are whatever **named** parameters to which the script was called with.
@@ -118,12 +131,12 @@ Now if you call the script without stating the parameters it would output:
 My First parameter is
 My Second parameter is
 ```
-Now try running the script with parameters. For example: ./testpara1.sh Onepara TwoPara
+Now try running the script with parameters. For example: ```./testpara1.sh Onepara TwoPara```
 **Output:**<br>
 ```
 My First parameter is Onepara
 My Second parameter is TwoPara
 ```
-
+**$#:** Displays the number of parameters. For example
 [< Back: Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks")
 | [Next: If then Statements >](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")
