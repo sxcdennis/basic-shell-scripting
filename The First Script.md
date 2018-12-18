@@ -12,16 +12,15 @@ The following is a guide to create your first "Hello World" script:
 -  Create the file and call it Helloworld1.bash ```#vi Helloworld1.bash```
 
 - Add the following lines and then save:
-```
-#!/bin/bash
+
+```#!/bin/bash
 # Author: Dennis
 # Date Created: 12/12/2018
 # Description: This script will output "Hello World"
 # Date Modified: 12/13/2018
 
-echo Hello world
+echo Hello world```
 
-```
 - Make sure your file is executable ```#chmod a+rx Helloworld1.bash```
 
 - Execute the script ```#./Helloworld1.bash```
