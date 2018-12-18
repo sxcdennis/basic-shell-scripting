@@ -2,4 +2,4 @@
 
 # Video:
 
-[< Back: Case Statements](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Case%20Statements.md "Case Statements") | [Next: Functions >](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Functions.md "Functions")
+[< Back: Case Statements](https://sxcdennis.github.io/basic-shell-scripting/Case%20Statements "Case Statements") | [Next: Functions >](https://sxcdennis.github.io/basic-shell-scripting/Functions "Functions")

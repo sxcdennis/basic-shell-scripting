@@ -34,7 +34,7 @@ Notice how every command is performed in a sequence read top to bottom like prev
 
 The following are a few random scripts that perform administrative tasks.
 
-<b> Example 1: This script performs some basic administrative tasks </b> <br>
+**Example 1: This script performs some basic administrative tasks** <br>
 ```
 #!/bin/bash
 # Author: Dennis
@@ -50,7 +50,7 @@ echo
 uptime
 ```
 
-<b> Example 2:  This script finds host name and username </b> <br>
+**Example 2:  This script finds host name and username** <br>
 ```
 #!/bin/bash
 # Author: Dennis
@@ -63,7 +63,7 @@ hostname
 echo
 whoami
 ```
-<b> Example 3: This script tells username the date and how many people are logged in. </b>
+**Example 3: This script tells username the date and how many people are logged in.**
 ```
 #!/bin/bash
 # Author: Dennis
@@ -80,4 +80,4 @@ echo
 These are just some examples of basic tasks that can be ran into scripts. There will be a bit more complexity and functionalities later in the guide.
 <br>
 Keep reading!<br>
-[ < Back: The First Script ](https://github.com/sxcdennis/basic-shell-scripting/blob/master/The%20First%20Script.md) | [ Next: Variables >](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Variables.md "Variables")
+[ < Back: The First Script ](https://sxcdennis.github.io/basic-shell-scripting/The%20First%20Script) | [ Next: Variables >](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")

@@ -3,12 +3,12 @@ Guide to Basic shell scripting (bash)
 
 # Introduction
 This guide as created to help some people get a basic understanding of shell scripting. It is completely free of charge !!
-This guide is writen for all bash scripting.
-
+This guide is written for all bash scripting.
+Most of this guide will not show output of scripts - so you are expected to follow through the material by using the input scripts. 
 ## Video Guide
-The Video section is just a visual guide for each subject. They don't have any voiceover but you can follow with the text guide if needed.
+The Video section is just a visual guide for each subject. They don't have any voice-over but you can follow with the text guide if needed.
 ## Audience
-This guide assumes some prior expereince in the following:
+This guide assumes some prior experience in the following:
 - Use of Linux/Unix shell
 - Understanding of some Linux/Unix commands
 - People who want to learn a bit of shell scripting or want to relearn some basics
@@ -16,18 +16,18 @@ This guide assumes some prior expereince in the following:
 # Table of Contents
 - [Introduction ](https:# "Introduction ")
 
-- [Scripting Standards](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Scripting%20Standards.md "Scripting Standards")
+- [Scripting Standards](https://sxcdennis.github.io/basic-shell-scripting/Scripting%20Standards "Scripting Standards")
 
-- [The First Script](https://github.com/sxcdennis/basic-shell-scripting/blob/master/The%20First%20Script.md "The First Script")
+- [The First Script](https://sxcdennis.github.io/basic-shell-scripting/The%20First%20Script "The First Script")
 
-- [Running Simple Tasks](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Running%20Simple%20Tasks.md "Running Simple Tasks")
+- [Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks")
 
-- [Variables](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Variables.md "Variables")
+- [Variables](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
 
-- [If then Statements](https://github.com/sxcdennis/basic-shell-scripting/blob/master/If%20then%20Statements.md "If then Statements")
+- [If then Statements](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")
 
-- [Case Statements](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Case%20Statements.md "Case Statements")
+- [Case Statements](https://sxcdennis.github.io/basic-shell-scripting/Case%20Statements "Case Statements")
 
-- [Exit Codes](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Exit%20codes.md "Exit Codes")
+- [Exit Codes](https://sxcdennis.github.io/basic-shell-scripting/Exit%20codes "Exit Codes")
 
-- [Functions](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Functions.md "Functions")
+- [Functions](https://sxcdennis.github.io/basic-shell-scripting/Functions "Functions")

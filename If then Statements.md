@@ -2,4 +2,4 @@
 
 # Video:
 
-[< Back: Variables](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Variables.md "Variables") | [Next: Case Statements >](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Case%20Statements.md "Case Statements")
+[< Back: Variables](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables") | [Next: Case Statements >](https://sxcdennis.github.io/basic-shell-scripting/Case%20Statements "Case Statements")

@@ -2,5 +2,4 @@
 
 # Video:
 
-[< Back: Exit Codes](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Exit%20codes.md "Exit Codes")
-
+[< Back: Exit Codes](https://sxcdennis.github.io/basic-shell-scripting/Exit%20codes "Exit Codes")

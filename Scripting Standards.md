@@ -5,9 +5,9 @@ In this section we'll go over the following: Naming Conventions, Formatting, Fil
 
 # Naming Conventions
 
-Typically people have a directory for all of their personal scripts. <b> Example:</b> I would put my scripts under ```/home/scripts```
-The script should have an extension followed by shell type. <b> Example: </b> ``` .sh, .bash, .perl, .python ```
-The script name should describe the script in some way.  <b> Example:</b> If you had a script that checks the date and uptime, maybe you'd name the file datenuptime.sh
+Typically people have a directory for all of their personal scripts. **Example:** I would put my scripts under ```/home/scripts```
+The script should have an extension followed by shell type. **Example:** ``` .sh, .bash, .perl, .python ```
+The script name should describe the script in some way.  ** Example:** If you had a script that checks the date and uptime, maybe you'd name the file datenuptime.sh
 
 
 # Formatting:
@@ -19,9 +19,9 @@ The first line of a UNIX/Linux tells that file to be executed.
 ```
 This tells us that /bin/bash will be executed. There are several other types such as: /bin/sh, /bin/perl, & /bin/python, but we will be using /bin/bash throughout this whole guide.
 
-The second line is usually started with a special symbol  <b>"#"</b> which will be our comments. This symbol: <b>"#"</b> is completely ignored by shell with the exception of the first line <b>"#!"</b>. Typically comments should include: Author, Date Created, Description of script, & Date Modified.
+The second line is usually started with a special symbol  **"#"** which will be our comments. This symbol: **"#"** is completely ignored by shell with the exception of the first line **"#!"**. Typically comments should include: Author, Date Created, Description of script, & Date Modified.
 
-<b>   Example: </b>
+**Example:**
 ```
 #!bin/bash
 # Author: Dennis
@@ -30,13 +30,13 @@ The second line is usually started with a special symbol  <b>"#"</b> which will 
 # Date Modified: 12/13/2018
 ```
 
-The following lines typically are followed by [Variables](https://github.com/sxcdennis/basic-shell-scripting/blob/master/Variables.md "Variables") which are covered later in the guide.
+The following lines typically are followed by [Variables](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables") which are covered later in the guide.
 
-Next are <b> commands</b> such as: echo, cp, grep etc..
+Next are **commands** such as: echo, cp, grep etc..
 
-Next are followed by <b> statements</b>: if, while, for etc..
+Next are followed by **statements:** if, while, for etc..
 
-<b>An Example of a well formated script:</b>
+**An Example of a well formated script:**
 ```
 #!bin/bash
 # Author: Dennis
@@ -60,9 +60,9 @@ mount -h
 
 # File Permissions & Execution
 All scripts must be able to read & execute by whomever needs to execute the script.
-To change permissions: ```#chmod a+rx script-name``` <b>or</b> ```#chmod 755 script-name```
+To change permissions: ```#chmod a+rx script-name``` **or** ```#chmod 755 script-name```
 
-To execute the script:   ```/filepath/file-name``` <b>or if you are in the directory of script file</b> ``` ./file-name```
+To execute the script:   ```/filepath/file-name``` **or if you are in the directory of script file** ``` ./file-name```
 
 # Sequence of scripts
 Scripts are in a sequence of order read from top to bottom.
@@ -78,10 +78,10 @@ echo Hello
 ```
 
 This script will use the commands in the following order: <br>
-<b>1st:</b> cd /home/ <br>
-<b>2nd:</b> ll <br>
-<b> 3rd: </b> echo Hello <br>
+**1st:** cd /home/ <br>
+**2nd:** ll <br>
+**3rd:** echo Hello <br>
 
 
 
-[ < Back: Introduction ](https://github.com/sxcdennis/basic-shell-scripting/blob/master/README.md) | [ Next: The First Script >](https://github.com/sxcdennis/basic-shell-scripting/blob/master/The%20First%20Script.md "The First Script")
+[ < Back: Introduction ](https://sxcdennis.github.io/basic-shell-scripting/README) | [ Next: The First Script >](https://sxcdennis.github.io/basic-shell-scripting/The%20First%20Script "The First Script")
