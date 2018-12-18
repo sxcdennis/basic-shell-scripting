@@ -1,7 +1,6 @@
 # Variables
-In this section we'll talk about variables and how to define them. There are also input/output scripts to go over.
+In this section we'll talk about variables - how to define them, Input/Output variables, and Special Variables.
 A variable is memory to where we can assign value, and manipulate its contents.
-
 
 # Video:
 
@@ -102,7 +101,7 @@ Also notice that there are double quotes **""** between commands. This is becaus
 For example lets say you run the command ```#touch my file.file``` you would create **two** files: my and file.file vs ```#touch "my file.file"``` which would create **one** file: my file.file
 
 ## Special Variables
-There are a set of variables that are already set for you already. They cannot have values assigned to them.
+There are a set of variables that are already set for you already. They cannot have values assigned to them. The following is a table with all of the special variables. I urge you to practice them on your own. I will not go into detail with all of them, but I will go over a few of them.
 <table>
   <thead>
     <tr>
@@ -113,26 +112,34 @@ There are a set of variables that are already set for you already. They cannot h
   <tbody>
     <tr>
       <td>$0 </td>
-      <td>First word; that is, the command name. This will have the full pathname if it was found via a PATH search</td>
+      <td>This will produce the pathname along with the filename. </td>
       <tr>
       <td>$n</td>
-      <td>Individual arguments on command line (positional parameters). The Bourne shell allows only nine parameters to be referenced directly (n = 1–9); Bash allows n to be greater than 9 if specified as ${n}.</td>
+      <td>Shell allows only nine parameters to be referenced n = 1–9 but Bash allows n to be greater than 9 if specified with curly braces: ${n} </td>
       </tr>
       <tr>
       <td> $# </td>
-      <td> Number of command-line arguments. </td>
+      <td> Number of command-line parameters stated.</td>
       </tr>
       <tr>
       <td> $@ </td>
-      <td>All arguments on command line, individually quoted (“$1” “$2” …)</td>
+      <td>All parameters stated on command line ("$1" "$2" "$3" "$4" etc…)</td>
+      </tr>
+      <tr>
+      <td> $IFS</td>
+      <td><b>Internal Field Separator</b>: The default value is <b>SPACE</b>, <b>TAB</b>and a <b>NEWLINE</b>. You can change this to whatever you want. </td>
       </tr>
       <tr>
       <td>$* </td>
-      <td>All arguments on command line as one string (“$1 $2…”). The values are separated by the first character in $IFS.</td>
+      <td> All parameters stated on command ("$1" "$2" "$3" "$4" etc…). The values are separated by the first character in $IFS. Does not preserve quoting and whitespaces.</td>
+      </tr>
+      <tr>
+      <td> $$</td>
+      <td>Process number of current running shell.</td>
       </tr>
       <tr>
       <td> $!</td>
-      <td>Process number of last background command.</td>
+      <td>Number of last background process.</td>
       </tr>
       <tr>
       <td>#?</td>
@@ -140,11 +147,11 @@ There are a set of variables that are already set for you already. They cannot h
       </tr>
       <tr>
       <td>$-</td>
-      <td>A hyphen expands to the current option flags as specified upon invocation, by the set built-in command, or those set by the shell itself (such as the -i).</td>
+      <td>Prints current options/flags in current shell or those set by user (Examples: -i, -h).</td>
       </tr>
       <tr>
       <td> $_ </td>
-      <td>The underscore variable is set at shell startup and contains the absolute file name of the shell or script being executed as passed in the argument list. Subsequently, it expands to the last argument to the previous command, after expansion. It is also set to the full pathname of each command executed and placed in the environment exported to that command. When checking mail, this parameter holds the name of the mail file. </td>
+      <td> In a script, it will execute previous command argument.</td>
       </tr>
     </tr>
   </tbody>
