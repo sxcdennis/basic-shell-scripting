@@ -201,7 +201,12 @@ Shell allows you to only go from 1-9 but you can go above 9 by using **{}** in b
 echo "This will be the 10th parameter ${10}"
 ```
 
-**Command Line:** ```#./testpara10.bash 1 2 3 4 5 6 7 8 9 ten```
+**Command Line:**
+
+```
+#./testpara10.bash 1 2 3 4 5 6 7 8 9 ten
+
+```
 **Output:** ```This will be the 10th parameter ten```
 
 
@@ -217,7 +222,13 @@ echo "My second parameter $2"
 echo "How many parameters total: $#"
 ```
 
-**Command Line:** ```#./testpara3.bash para1 para2```
+**Command Line:**
+
+```
+#./testpara3.bash para1 para2
+
+```
+
 **Output:**
 ```
 My first parameter is para1
@@ -241,8 +252,10 @@ echo "How many parameters total: $#"
 echo "All of the parameters are: $@"
 ```
 **Command Line:**
+
 ```
 #./displayall.bash para1 para2
+
 ```
 
 **Output:**
@@ -268,8 +281,10 @@ read a b c
 echo "a is $a b is $b c is $c"
 ```
 **Command Line:**
+
 ```
 #./IFS1.bash
+
 ```
 
 **Output:**
@@ -307,8 +322,12 @@ echo "New IFS: a is $a b is $b c is $c"
 echo "Default IFS: x is $x y is $y z is $z"
 
 ```
+
 **Command Line:**
-```#./IFS2.bash
+
+```
+#./IFS2.bash
+
 ```
 
 **Output:**
@@ -341,10 +360,16 @@ read x y z
 echo "Combined IFS First Values: a is $a b is $b c is $c"
 echo "Combined IFS Second Values: x is $x y is $y z is $z"
 ```
+
 **Command Line:**
-```#./IFS3.bash
+
 ```
+#./IFS3.bash
+
+```
+
 **Output:**
+
 ```
 Please input values for COMBINED IFS separated by hyphens or spaces or TABS
 aa-BB cc
@@ -356,8 +381,13 @@ Combined IFS Second Values: x is AA y is bb z is CC
 ```
 
 **$:*** Similar to **$@** - Displays all parameters stated on command line. The values are separated by the first character in $IFS. Does not preserve quoting and whitespaces.
-**Example:** This cannot be displayed without the use of functions or if then statements. Which is discussed later in the guide.
+
+**Example:**
+
+This cannot be displayed without the use of functions or if then statements. Which is discussed later in the guide.
+
 **Input Script:**
+
 ```
 #!/bin/bash
 # This will display the difference between $@ and $*.
@@ -376,9 +406,16 @@ echo
 echo "This is with *:"
 with_star "one" "two three" "four"
 ```
-**Command Line:** ```#./displaydiff.bash```
+
+**Command Line:**
+
+```
+#./displaydiff.bash
+```
+
 
 **Output:**
+
 ```
 This is with @:
 one
@@ -390,33 +427,56 @@ one two three four
 ```
 
 **$$:** Process number of current running shell.
+
 **Example:**
+
 **Input Script:**
+
 **Command Line:**
+
 **Output:**
 
 **$!:** Number of last background process.
+
 **Example:**
+
 **Input Script:**
+
+
 **Command Line:**
+
 **Output:**
 
 **$?:** Exit value of last executed command.
+
 **Example:**
+
 **Input Script:**
+
 **Command Line:**
+
 **Output:**
+
 
 **$-:** Prints current options/flags in current shell or those set by user (Examples: -i, -h).
+
 **Example:**
+
 **Input Script:**
+
 **Command Line:**
+
 **Output:**
 
+
 **$_:** In a script, it will execute previous command argument.
+
 **Example:**
+
 **Input Script:**
+
 **Command Line:**
+
 **Output:**
 
 [< Back: Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks")
