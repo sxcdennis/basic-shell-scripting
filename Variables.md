@@ -389,7 +389,7 @@ Combined IFS First Values: a is AA b is BB c is cc
 Combined IFS Second Values: x is AA y is bb z is CC
 ```
 
-**$:*** Similar to **$@** - Displays all parameters stated on command line. The values are separated by the first character in $IFS. Does not preserve quoting and whitespaces.
+**"$:*"** Similar to **$@** - Displays all parameters stated on command line. The values are separated by the first character in $IFS. Does not preserve quoting and whitespaces.
 
 **Example:**
 
