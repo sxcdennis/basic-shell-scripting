@@ -114,7 +114,20 @@ There are a set of variables that are already set for you already. They cannot h
 | $? | Exit value of last executed command. |
 | $- | A hyphen expands to the current option flags as specified upon invocation, by the set built-in command, or those set by the shell itself (such as the -i). |
 | $_ | 	The underscore variable is set at shell startup and contains the absolute file name of the shell or script being executed as passed in the argument list. Subsequently, it expands to the last argument to the previous command, after expansion. It is also set to the full pathname of each command executed and placed in the environment exported to that command. When checking mail, this parameter holds the name of the mail file. |
-
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Test2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>field 1</td>
+      <td>value one</td>
+    </tr>
+  </tbody>
+</table>
 <br>
 The first set of variables are numbers. **$0** ,**$1 - $9**, and **$#**. All of them having different functionalities. <br>
 **$0:** Is the basename of the program that is called. Example: Your script name is **test1.sh** located in ```/home/scripts```, if you call the variable it would output ```/home/scripts/test1.sh```<br>
