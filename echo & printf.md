@@ -2,33 +2,43 @@
 
 In this section we'll talk about the use of echo and printf within bash scripting.
 
-## echo
+Most of the definitions were taken from the manual pages of each command.
+
+
+# Video:
+
+
+# echo
 
 **echo** is probably one of the most used command for Linux bash. It inputs a line of text and displays it standard output.
 
+I will not go over all of the options to them, but go over *some* of the common options.
+
+I urge you to practice them on your own.
+
+### echo syntax
+
+```
+**echo** [option] [string]
+
 ```
 
-Common Options
+### Common Options
 
+```
  -n
      Do not output the trailing newline.
-
- -E
-     Disable the interpretation of the following backslash-escaped characters.
 
  -e
      Enable interpretation of the following backslash-escaped
      characters in each String:
 
-    \a          alert (bell)
 
     \b          backspace
 
     \c          suppress trailing newline
 
     \e          escape
-
-    \f          form feed
 
     \n          new line
 
@@ -38,46 +48,268 @@ Common Options
 
     \v          vertical tab
 
-    \\          backslash
-```
-
-## printf
 
 ```
-Common options
-\"     double quote
+### Examples of echo
 
-\0NNN  character with octal value NNN (0 to 3 digits)
+## -n
+This makes it so echo does *not* output a new line
+
+**Command Line:**
+
+```
+echo -n Hello
+
+```
+
+
+**Output:**
+
+```
+
+Hello[root@localhost scripts]#
+
+
+```
+As you can see it ignores outputting a new line.
+
+## -e with \b
+This makes so there's no spaces in between characters
+
+
+**Command Line:**
+
+```
+echo -e "Hello \bthere \bmy \bname \bis \bDennis"
+
+
+```
+
+**Output:**
+
+```
+
+HellotheremynameisDennis
+
+```
+
+## -e with \n
+
+Treats each \n for new line
+
+**Command Line:**
+
+```
+
+echo -e "Hello \nmy \nname \nis \nDennis"
+
+```
+
+**Output:**
+
+```
+Hello
+my
+name
+is
+Dennis
+
+```
+## -e with \t
+
+Treats each \t as horizontal tabs
+
+**Command Line:**
+
+```
+
+echo -e "Hello \tmy \tname \tis \tDennis"
+
+```
+
+**Output:**
+
+```
+
+Hello  my     name      is      Dennis
+
+```
+## -e with \v
+
+**Command Line:**
+
+```
+
+echo -e "Hello \vmy \vname \vis \vDennis"
+
+```
+
+**Output:**
+
+```
+
+Hello
+      my
+          name
+              is
+                  Dennis
+```
+
+## -e with \c
+
+**Command Line:**
+
+```
+
+echo -e "Hello my name is \cDennis"
+
+```
+
+**Output:**
+
+```
+
+Hello my name is [root@localhost scripts]#
+
+```
+
+## -e with \r
+
+**Command Line:**
+
+```
+
+echo -e "Hello my name is \rDennis"
+
+```
+
+**Output:**
+
+```
+
+Dennisismy name is
+
+```
+
+
+# printf
+
+printf prints a formatted string to standard output. It is a handy way to do more precise formatted outputs compared to echo.
+
+I will not go over all of the options to them, but go over *some* of the common options.
+
+I urge you to practice them on your own.
+
+### printf syntax
+
+```
+
+**printf** FORMAT [ARGUMENT]
+
+or
+**printf** [OPTION]
+
+```
+*OPTIONS* Can be *FORMAT* or *ARGUMENT*
+
+*FORMATS* control the output and defines the way *ARGUMENTS* are expressed
+
+*ARGUMENTS* is inserted into formatted output.
+
+###Common options
+
+```
 
 \b     backspace
-
-\f     form feed
 
 \n     new line
 
 \t     horizontal tab
 
-%%     a single %
-
-%b     ARGUMENT as a string with `\' escapes interpreted
-
-%q     Output the corresponding argument in a format that can be
-       reused as shell input
-%f	Interpret and print the associated argument as floating point number
-
 %s     Character string char
+
 ```
-# Video:
 
 
+## Examples of printf
+
+# printf with %s
+
+**Command Line:**
+
+```
+printf "Hello %s $LOGNAME"
+
+```
 
 
+**Output**
+
+```
+
+Hello root[root@localhost scripts]#
 
 
+```
+
+# printf with \n
+
+**Command Line:**
+
+```
+
+printf "Hello \n $LOGNAME"
 
 
+```
 
 
+**Output**
+
+```
+
+Hello
+root[root@localhost scripts]#
+
+```
+
+# printf with \b
+
+**Command Line:**
+
+```
+
+printf "Hello\b $LOGNAME"
+
+```
+
+
+**Output**
+
+```
+
+HELL root[root@localhost scripts]#
+
+```
+
+# printf with \t
+
+**Command Line:**
+
+```
+
+printf "HELLO\t $LOGNAME"
+
+
+```
+
+
+**Output**
+
+```
+HELLO   root[root@localhost scripts]#
+
+```
 
 
 
