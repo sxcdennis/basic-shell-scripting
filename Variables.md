@@ -3,7 +3,7 @@ In this section we'll talk about variables - how to define them, Input/Output va
 A variable is memory to where we can assign value, and manipulate its contents.
 As we progress through this section, some standard formatting is not input into the scripts, but you should be getting used to doing it on your own.
 Also in the command line outputs, I do not mention using ```chmod``` so please take note of that.  
-# Videos:
+# Videos
 
 # Define Variables
 
@@ -152,14 +152,14 @@ There are a set of variables that are already set for you already. They cannot h
 <br>
 
 
-## $0:
+## $0
 Will produce the pathname along with the filename.
 
 **Example:** Your script name is **test1.sh** located in ```/home/scripts```
 If you call the variable it would output ```/home/scripts/test1.sh```
 
 
-##$n or $1-$9 or ${n}:
+##$n or $1-$9 or ${n}
 
 These are whatever **named** parameters to which the script was called with.
 For example lets say I have a script named testpara1.sh :
@@ -210,7 +210,7 @@ This will be the 10th parameter ten
 ```
 
 
-## $#:
+## $#
 Displays the number of parameters.
 
 **For example:**
@@ -240,7 +240,7 @@ How many parameters total: 2
 ```
 
 
-## $@:
+## $@
 Displays all parameters stated on the command line.
 
 **Example:**
@@ -270,7 +270,7 @@ How many parameters total: 2
 All of the parameters are: para1 para2
 ```
 
-## $IFS:
+## $IFS
 Abbreviation for Internal Field Separator. The default value of it is either SPACE(spacebar), TAB and a New Line. You have the option to change this in a script as well.
 
 **Example 1:**
@@ -388,7 +388,7 @@ Combined IFS First Values: a is AA b is BB c is cc
 Combined IFS Second Values: x is AA y is bb z is CC
 ```
 
-## $*:
+## $*
 
 Similar to **$@** - Displays all parameters stated on command line. The values are separated by the first character in $IFS. Does not preserve quoting and whitespaces.
 
@@ -437,7 +437,7 @@ This is with *:
 one two three four
 ```
 
-## $$:
+## $$
 Displays process number of current running shell.
 
 **Example:**
@@ -471,7 +471,7 @@ This is the process ID number of the script on the current running shell: 123029
 
 Notice how using ```ps -A | grep $$``` displays the the ID line.
 
-## $!:
+## $!
 Number of last background process.
 
 **Example:**
@@ -502,7 +502,7 @@ This is the last background process ID: 123550
 123550 tty1   00:00:00 sleep
 ```
 
-## $?:
+## $?
 
 Exit value of last executed command.
 
@@ -583,7 +583,7 @@ The following a table with parameter expansions:
 </table>
 <br>
 
-## :- :
+## :-
 If *parameter* is unset or null, then whatever you put as *word* substitutes *parameter* . Otherwise, the *value* [ what you typed] of *parameter* is substituted by whatever you typed in.
 
 **Example:**
@@ -627,7 +627,7 @@ If *parameter* ```$yourname``` is unset **(Output 1)**  then whatever you put as
 If *value* is typed ```Dennis``` then *parameter* ```$yourname``` is replaced with it **(Output 2)**
 
 
-## := :
+## :=
 
 Similar to **:-** except it *assigns* value  to *parameter* as well and not just expand.  
 
@@ -666,7 +666,7 @@ Test with Minus
 ```
 As you can see the test with :- was not *assigned*
 
-## :? :
+## :?
 
 If parameter is null or unset, the expansion of word (or a message to that effect if word is not present) is written to the standard error and the shell, if it is not interactive, exits. Otherwise, the value of parameter is substituted.
 This is similar to *:=* but it just displays an error if *parameter* is unset or nulled.
@@ -713,7 +713,7 @@ What is your name?
 
 ```
 
-## :+ :
+## :+
 
 If parameter is null or unset, nothing is substituted, otherwise the expansion of word is substituted.
 
