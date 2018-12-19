@@ -1,6 +1,6 @@
 #  echo & printf
 
-In this section we'll talk about the use of echo and printf within bash scripting.
+In this section we'll talk about the use of echo and printf. 
 
 Most of the definitions were taken from the manual pages of each command.
 
