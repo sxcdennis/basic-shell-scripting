@@ -1,8 +1,9 @@
 # Variables
-In this section we'll talk about variables - how to define them, Input/Output variables, and Special Variables.
+In this section we'll talk about variables - how to define them, Input/Output variables, Special Variables and Parameter Expansions.
 A variable is memory to where we can assign value, and manipulate its contents.
-
-# Video:
+As we progress through this section, some standard formatting is not input into the scripts, but you should be getting used to doing it on your own.
+Also in the command line outputs, I do not mention using ```chmod``` so please take note of that.  
+# Videos:
 
 # Define Variables
 
@@ -762,6 +763,12 @@ What is your name?
 
 ```
 So looking back at the definition if *parameter* is null or unset, nothing is substituted or in this case its replaced with blank space. Otherwise the *expansion word* ```Dennis``` is substituted with ```YOU HAVE NO NAME```.
+
+
+
+
+
+
 
 [< Back: echo & printf](https://sxcdennis.github.io/basic-shell-scripting/echo%20%26%20printf "echo & printf")
 | [Next: If then Statements >](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")
