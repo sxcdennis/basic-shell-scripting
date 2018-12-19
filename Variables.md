@@ -100,7 +100,7 @@ If you were to use it without the curly braces, it would just think that you're 
 Also notice that there are double quotes **""** between commands. This is because without the quotes the arguments for the command would run differently.<br>
 For example lets say you run the command ```#touch my file.file``` you would create **two** files: my and file.file vs ```#touch "my file.file"``` which would create **one** file: my file.file
 
-## Special Variables
+# Special Variables
 There are a set of variables that are already set for you already. They cannot have values assigned to them. The following is a table with all of the special variables. I urge you to practice them on your own.
 <table>
   <thead>
@@ -135,7 +135,7 @@ There are a set of variables that are already set for you already. They cannot h
       </tr>
       <tr>
       <td> $$</td>
-      <td>Process number of current running shell.</td>
+      <td> Displays process number of current running shell.</td>
       </tr>
       <tr>
       <td> $!</td>
@@ -144,14 +144,6 @@ There are a set of variables that are already set for you already. They cannot h
       <tr>
       <td>$?</td>
       <td>Exit value of last executed command.</td>
-      </tr>
-      <tr>
-      <td>$-</td>
-      <td>Prints current options/flags in current shell or those set by user (Examples: -i, -h).</td>
-      </tr>
-      <tr>
-      <td> $_ </td>
-      <td> In a script, it will execute previous command argument.</td>
       </tr>
     </tr>
   </tbody>
@@ -445,15 +437,38 @@ one two three four
 ```
 
 ## $$:
-Process number of current running shell.
+Displays process number of current running shell.
 
 **Example:**
 
 **Input Script:**
 
-**Command Line:**
+```
+#!/bin/bash
+# This will be an example of using $$
+# Filename is displaypronum.bash
 
-**Output:**
+echo "This is the process ID number of the script on the current running shell: $$"
+ps -A | grep $$
+
+```
+
+**Command Line:**
+```
+./displaypronum.bash
+
+```
+
+**Example Output:**
+
+```
+
+This is the process ID number of the script on the current running shell: 123029
+123029 tty1     00:00:00 displaypronum.b
+
+```
+
+Notice how using ```ps -A | grep $$``` displays the the ID line.
 
 ## $!:
 Number of last background process.
@@ -462,51 +477,82 @@ Number of last background process.
 
 **Input Script:**
 
+```
+#!/bin/bash
+# This will be an example of using $!
+# The file name will be: lastbg.bash
+
+sleep 100&
+echo "This is the last background process ID: $!"
+ps -A | grep $!
+```
 
 **Command Line:**
 
-**Output:**
+```
+./lastbg.bash
+
+```
+
+**Example Output:**
+
+```
+This is the last background process ID: 123550
+123550 tty1   00:00:00 sleep
+```
 
 ## $?:
 
 Exit value of last executed command.
 
-**Example:**
-
-**Input Script:**
-
-**Command Line:**
-
-**Output:**
-
-
-## $-:
-
-Prints current options/flags in current shell or those set by user (Examples: -i, -h).
+Typically for the program to pass the **0** value stands for successful executions and **1 or higher** for failed executions
 
 **Example:**
 
 **Input Script:**
 
+```
+#!/bin/bash
+# This is an example of using $? which will display values of successful executions vs failed
+# The file name will be called: values.bash
+
+
+cat nothere.txt
+echo The value of the first command is: $?
+
+touch nothere.txt
+echo The value of the second command is: $?
+
+rm nothere.txt
+echo The value of the third command is: $?
+
+```
+
 **Command Line:**
+
+```
+./values.bash
+
+```
+
 
 **Output:**
 
+```
+The value of the first command is: 1
+The value of the second command is: 0
+The value of the third command is: 0
 
-## $_:
-
-In a script, it will execute previous command argument.
-
-**Example:**
-
-**Input Script:**
-
-**Command Line:**
-
-**Output:**
+```
+As stated earlier, the values **0** means successful execution while **1 or higher** is failed executions.
+Looking back at the script, the first command ```cat nothere.txt``` did not exist at the moment so the command had failed.
+We then follow up by using ```touch nothere.txt``` which is successful. Then finally followed by ```rm nothere.txt``` which removes the file created and is a successful command.
 
 
-## Parameter Expansions
+# Parameter Expansions
+Parameter Expansions are similar to special variables. Here we'll talk about **:- , :=, :?, and :+**
+
+The following a table with parameter expansions:
 
 <table>
   <thead>
@@ -517,24 +563,205 @@ In a script, it will execute previous command argument.
   </thead>
   <tbody>
     <tr>
-      <td> ${parameter:-word} </td>
-      <td>If parameter is unset or null, the expansion of word is substituted. Otherwise, the value of parameter is substituted. </td>
+      <td> ${*parameter* **:-** *word*} </td>
+      <td>If *parameter* is unset or null, then whatever you put as *word* substitutes *parameter* . Otherwise, the *value* [ what you typed] of *parameter* is substituted by whatever you typed in. </td>
       <tr>
-      <td>${parameter:=word}</td>
+      <td>${*parameter* **:=** word}</td>
       <td> If parameter is unset or null, the expansion of word is assigned to parameter. The value of parameter is then substituted. Positional parameters and special parameters may not be assigned to in this way. </td>
       </tr>
       <tr>
-      <td> ${parameter:?word}</td>
-      <td> If parameter is null or unset, the expansion of word (or a message to that effect if word is not present) is written to the standard error and the shell, if it is not interactive, exits. Otherwise, the value of parameter is substituted.</td>
+      <td> ${*parameter* **:?** word}</td>
+      <td> If *parameter* is null or unset, the expansion of word (or a message to that effect if word is not present) is written to the standard error and the shell, if it is not interactive, exits. Otherwise, the value of parameter is substituted.</td>
       </tr>
       <tr>
-      <td> ${parameter:+word} </td>
-      <td> If parameter is null or unset, nothing is substituted, otherwise the expansion of word is substituted.</td>
+      <td> ${*parameter* **:+** word} </td>
+      <td> If *parameter* is null or unset, nothing is substituted, otherwise the expansion of word is substituted.</td>
       </tr>
     </tr>
   </tbody>
 </table>
 <br>
+
+## :- :
+If *parameter* is unset or null, then whatever you put as *word* substitutes *parameter* . Otherwise, the *value* [ what you typed] of *parameter* is substituted by whatever you typed in.
+
+**Example:**
+
+**Input Script:**
+
+```
+#!/bin/bash
+# This will be an example of #-
+# We will name this file paraexpan1.bash
+echo "Is your name `whoami` ? Enter your name."
+read yourname
+echo "Your name is: ${yourname:-Friend}"
+
+```
+
+**Command Line:**
+
+```
+./paraexpan1.bash
+
+```
+
+**Output 1:**
+
+```
+Is your name root ? Enter your name.
+
+Your name is Friend  
+```
+
+**Output 2:**
+
+```
+Is your name root ? Enter your name.
+Dennis
+Your name is Dennis   
+```
+As you can see the difference in the outputs. We look back at the definition of this.
+If *parameter* ```$yourname``` is unset **(Output 1)**  then whatever you put as *word* ```Friend``` substitutes *parameter* ```$yourname```
+If *value* is typed ```Dennis``` then *parameter* ```$yourname``` is replaced with it **(Output 2)**
+
+
+## := :
+
+Similar to **:-** except it *assigns* value  to *parameter* as well and not just expand.  
+
+**Example:**
+
+**Input Script:**
+
+```
+#!/bin/bash
+# This will be a comparison between :- and :=
+# Name will be called paraexpan2.bash
+A=''
+B=''
+echo ${A:=Test with Equal}
+echo ${B:-Test with Minus}
+echo 1. $A
+echo 2. $B
+
+```
+
+**Command Line:**
+
+```
+./paraexpan2.bash
+
+```
+
+**Output:**
+
+```
+Test with Equal
+Test with Minus
+1. Test with Equal
+2.
+
+```
+As you can see the test with :- was not *assigned*
+
+## :? :
+
+If parameter is null or unset, the expansion of word (or a message to that effect if word is not present) is written to the standard error and the shell, if it is not interactive, exits. Otherwise, the value of parameter is substituted.
+This is similar to *:=* but it just displays an error if *parameter* is unset or nulled.
+
+**Example:**
+**Input Script:**
+
+```
+#!/bin/bash
+# This will show an example of :?
+# The filename will be paraexpan3.bash
+
+echo What is your name?
+read yourname
+echo "Your name is: ${yourname:?ERROR}"
+
+```
+
+**Command Line:**
+
+```
+./paraexpan3.bash
+
+```
+
+
+**Output 1:**
+
+```
+
+What is your name?
+Dennis
+Your name is: Dennis
+
+```
+
+**Output 2:**
+
+```
+
+What is your name?
+
+./ paraexpan3.bash: line 7: yourname: ERROR
+
+```
+
+## :+ :
+
+If parameter is null or unset, nothing is substituted, otherwise the expansion of word is substituted.
+
+**Example:**
+
+**Input Script:**
+
+```
+#!/bin/bash
+# This will show an example of :+
+# The filename will be paraexpan4.bash
+
+echo What is your name?
+read yourname
+echo ${yourname:+YOU HAVE NO NAME}"
+
+```
+
+
+**Command Line:**
+
+```
+./paraexpan4.bash
+
+```
+
+
+**Output 1:**
+
+
+```
+What is your name?
+Dennis
+YOU HAVE NO NAME
+
+```
+
+**Output 2:**
+
+
+```
+What is your name?
+
+
+
+[root@localhost scripts]#
+
+```
+So looking back at the definition if *parameter* is null or unset, nothing is substituted or in this case its replaced with blank space. Otherwise the *expansion word* ```Dennis``` is substituted with ```YOU HAVE NO NAME```.
 
 [< Back: echo & printf](https://sxcdennis.github.io/basic-shell-scripting/echo%20%26%20printf "echo & printf")
 | [Next: If then Statements >](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")
