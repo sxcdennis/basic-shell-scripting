@@ -536,5 +536,5 @@ In a script, it will execute previous command argument.
 </table>
 <br>
 
-[< Back: Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks")
+[< Back: echo & printf](https://sxcdennis.github.io/basic-shell-scripting/echo%20%26%20printf "echo & printf")
 | [Next: If then Statements >](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")

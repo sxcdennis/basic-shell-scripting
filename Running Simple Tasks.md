@@ -80,4 +80,4 @@ echo
 These are just some examples of basic tasks that can be ran into scripts. There will be a bit more complexity and functionalities later in the guide.
 <br>
 Keep reading!<br>
-[ < Back: The First Script ](https://sxcdennis.github.io/basic-shell-scripting/The%20First%20Script) | [ Next: Variables >](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
+[ < Back: The First Script ](https://sxcdennis.github.io/basic-shell-scripting/The%20First%20Script) | [Next : echo & printf >](https://sxcdennis.github.io/basic-shell-scripting/echo%20%26%20printf "echo & printf")

@@ -83,4 +83,4 @@ Common options
 
 
 [< Back: Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks")
-|[ Next: Variables >](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
+|[Next: Variables >](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
