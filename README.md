@@ -2,7 +2,7 @@
 Guide to Basic shell scripting (bash)
 
 # Introduction
-This guide as created to help some people get a basic understanding of shell scripting. It is completely free of charge !!
+This guide is created to help some people get a basic understanding of shell scripting. It is completely free of charge !!
 This guide is written for all bash scripting.
 Most of this guide will not show output of scripts - so you are expected to follow through the material by using the input scripts.
 ## Video Guide
@@ -25,6 +25,8 @@ This guide assumes some prior experience in the following:
 - [echo & printf](https://sxcdennis.github.io/basic-shell-scripting/echo%20%26%20printf "echo & printf")
 
 - [Variables](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
+
+- [Loops](https://sxcdennis.github.io/basic-shell-scripting/Loops "Loops")
 
 - [If then Statements](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")
 
