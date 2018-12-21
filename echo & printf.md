@@ -314,5 +314,4 @@ HELLO   root[root@localhost scripts]#
 
 
 
-[< Back: Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks")
-||[Next: Variables >](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
+[< Back: Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks") || [Next: Variables >](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
