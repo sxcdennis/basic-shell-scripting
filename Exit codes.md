@@ -75,7 +75,7 @@ exit 12
 ```
 
 hello
-[root@localhost scripts]echo $?
+[root@localhost scripts]#echo $?
 12
 
 ```
