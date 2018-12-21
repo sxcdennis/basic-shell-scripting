@@ -218,4 +218,4 @@ This script will keep looping until you type ```quit```
 
 
 
-[< Back: Variables](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables") | [Next: If then Statements >](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")
+[< Back: Variables](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables") || [Next: If then Statements >](https://sxcdennis.github.io/basic-shell-scripting/If%20then%20Statements "If then Statements")

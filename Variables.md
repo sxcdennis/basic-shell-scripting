@@ -771,4 +771,4 @@ So looking back at the definition if *parameter* is null or unset, nothing is su
 
 
 [< Back: echo & printf](https://sxcdennis.github.io/basic-shell-scripting/echo%20%26%20printf "echo & printf")
-| [Next: Loops >](https://sxcdennis.github.io/basic-shell-scripting/Loops "Loops")
+|| [Next: Loops >](https://sxcdennis.github.io/basic-shell-scripting/Loops "Loops")

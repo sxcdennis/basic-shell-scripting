@@ -66,4 +66,4 @@ Now go into detail on what each one outputs: <br>
 
 Not bad right? All of this makes more sense later on when you look into details of scripts! Continue reading!
 
-[ < Back: Scripting Standards ](https://sxcdennis.github.io/basic-shell-scripting/Scripting%20Standards) | [ Next: Running Simple Tasks >](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks)
+[ < Back: Scripting Standards ](https://sxcdennis.github.io/basic-shell-scripting/Scripting%20Standards) || [ Next: Running Simple Tasks >](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks)

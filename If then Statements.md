@@ -252,7 +252,7 @@ You can try using **&&** but remember to use double brackets **[[]]**
 
 ## OR -o and ||
 
-True if left or right hand expression is true.  Using **||** requires using double brackets **[[]]**
+True if left or right hand expression is true.  Using ```||``` requires using double brackets **[[]]**
 
 
 **Syntax**
@@ -394,4 +394,4 @@ Lets say you made the file by using ```touch /home/scripts/myfile.txt```
 Then your output would be ```File found!!```
 
 
-[< Back: Loops](https://sxcdennis.github.io/basic-shell-scripting/Loops "Loops") | [Next: Case Statements >](https://sxcdennis.github.io/basic-shell-scripting/Case%20Statements "Case Statements")
+[< Back: Loops](https://sxcdennis.github.io/basic-shell-scripting/Loops "Loops") || [Next: Case Statements >](https://sxcdennis.github.io/basic-shell-scripting/Case%20Statements "Case Statements")

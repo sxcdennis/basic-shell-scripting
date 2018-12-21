@@ -1,6 +1,6 @@
 #  echo & printf
 
-In this section we'll talk about the use of echo and printf. 
+In this section we'll talk about the use of echo and printf.
 
 Most of the definitions were taken from the manual pages of each command.
 
@@ -315,4 +315,4 @@ HELLO   root[root@localhost scripts]#
 
 
 [< Back: Running Simple Tasks](https://sxcdennis.github.io/basic-shell-scripting/Running%20Simple%20Tasks "Running Simple Tasks")
-|[Next: Variables >](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
+||[Next: Variables >](https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables")
