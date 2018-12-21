@@ -3,7 +3,6 @@ Guide to Basic shell scripting (bash)
 
 # Introduction
 This guide is created to help some people get a basic understanding of shell scripting. It is completely free of charge !!
-This guide is written for all bash scripting.
 Most of this guide will not show output of scripts - so you are expected to follow through the material by using the input scripts.
 ## Video Guide
 The Video section is just a visual guide for each subject. They don't have any voice-over but you can follow with the text guide if needed.
