@@ -1,7 +1,7 @@
 # Exit Codes
 Every command returns an exit code.
 Exit codes are a number between 0 and 255.
-A successful command returns a 0, while unsuccessful ones return non-zero. This was briefly discussed in the  [ variables section] (https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables") .
+A successful command returns a 0, while unsuccessful ones return non-zero. This was briefly discussed in the  [variables section] (https://sxcdennis.github.io/basic-shell-scripting/Variables "Variables") .
 
 # Video:
 
