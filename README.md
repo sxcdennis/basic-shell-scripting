@@ -34,3 +34,5 @@ This guide assumes some prior experience in the following:
 - [Exit Codes](https://sxcdennis.github.io/basic-shell-scripting/Exit%20codes "Exit Codes")
 
 - [Functions](https://sxcdennis.github.io/basic-shell-scripting/Functions "Functions")
+
+- [Arrays](https://sxcdennis.github.io/basic-shell-scripting/Arrays "Arrays")
