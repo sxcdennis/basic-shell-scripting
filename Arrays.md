@@ -1,5 +1,5 @@
 # Arrays
-Array is a variable which contains multiple values that may be of same type or of a different type. There are two types of arrays **indexed** array and **associative** arrays. *Associative* arrays can be defined using **-A** while *indexed* are created by using **-a**.  Array index starts with zero. In this section we'll talk about: **Creating, Operations, Adding, & Deleting Arrays**
+Array is a variable which contains multiple values that may be of same type or of a different type. There are two types of arrays **indexed** array and **associative** arrays. *Associative* arrays can be defined using **-A** while *indexed* are created by using **-a**.  Array index starts with zero. In this section we'll talk about: **Creating, Adding, Deleting Arrays and Operations**
 
 # Videos
 
@@ -418,6 +418,41 @@ CentOS FreeBSD
 
 ```
 
+# Deleting Arrays
+
+**Syntax**
+
+```
+
+unset Array_Name
+
+```
+
+
+**Example**
+
+```
+
+#!/bin/bash
+# This delete contents of an array
+# We'll name this arrays10.sh
+declare -a Unix=( "Debian" "Red Hat" "Ubuntu" "Fedora" "CentOS" "FreeBSD")
+
+unset Unix
+echo ${Unix[@]}
+echo ${#Unix[@]}
+
+```
+
+**Output**
+
+```
+
+
+0
+
+```
+
 ## Copy an array
 
 
@@ -489,41 +524,6 @@ Debian Red Hat Ubuntu Fedora CentOS FreeBSD bash ksh jsh rsh
 
 ```
 
-# Deleting Arrays
-
-**Syntax**
-
-```
-
-unset Array_Name
-
-```
-
-
-**Example**
-
-```
-
-#!/bin/bash
-# This delete contents of an array
-# We'll name this arrays10.sh
-declare -a Unix=( "Debian" "Red Hat" "Ubuntu" "Fedora" "CentOS" "FreeBSD")
-
-unset Unix
-echo ${Unix[@]}
-echo ${#Unix[@]}
-
-```
-
-**Output**
-
-```
-
-
-0
-
-```
-
 ## Load Content of a File into an array
 
 **Syntax**
@@ -561,6 +561,5 @@ This will be a good script
 
 
 ```
-
 
 || [< Back: Functions](https://sxcdennis.github.io/basic-shell-scripting/Functions "Functions")
