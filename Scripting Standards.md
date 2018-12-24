@@ -7,7 +7,7 @@ In this section we'll go over the following: Naming Conventions, Formatting, Fil
 
 Typically people have a directory for all of their personal scripts. **Example:** I would put my scripts under ```/home/scripts```
 The script should have an extension followed by shell type. **Example:** ``` .sh, .bash, .perl, .python ```
-The script name should describe the script in some way.  ** Example:** If you had a script that checks the date and uptime, maybe you'd name the file datenuptime.sh
+The script name should describe the script in some way.  **Example:** If you had a script that checks the date and uptime, maybe you'd name the file datenuptime.sh
 
 
 # Formatting:
@@ -23,7 +23,7 @@ The second line is usually started with a special symbol  **"#"** which will be 
 
 **Example:**
 ```
-#!bin/bash
+#!/bin/bash
 # Author: Dennis
 # Date Created: 12/12/2018
 # Description: This is a script
@@ -38,24 +38,26 @@ Next are followed by **statements:** if, while, for etc..
 
 **An Example of a well formated script:**
 ```
-#!bin/bash
+#!/bin/bash
 # Author: Dennis
 # Date Created: 12/12/2018
 # Description: This is a script
 # Date Modified: 12/13/2018
 
 a="My name is Dennis"
-
+count="100"
 echo Hello $a
 
 date
 mount -h
 
-          if { $a -eq file }
-          then echo this
-          else
-          echo that
-          fi
+if { $count -eq 50 }
+then
+echo Count is 50
+else
+echo Count is not 50
+fi
+
 ```
 
 # File Permissions & Execution
@@ -68,6 +70,7 @@ To execute the script:   ```/filepath/file-name``` **or if you are in the direct
 Scripts are in a sequence of order read from top to bottom.
 If I had the following script:
 ```
+# !/bin/bash
 # Author: Dennis
 # Date Created: 12/12/2018
 # Description: This is a script
