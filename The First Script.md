@@ -32,7 +32,7 @@ Simple right? It just outputs Hello world to you!
 # Variations of Hello World
 
 Now we dig deeper into variations of Hello World and reasoning behind each one.
-Here is a script I created called ** Helloworld2.bash:**
+Here is a script I created called **Helloworld2.bash:**
 
 ```
 #!/bin/bash
