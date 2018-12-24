@@ -49,9 +49,9 @@ count="100"
 echo Hello $a
 
 date
-mount -h
+mount -h | grep else
 
-if { $count -eq 50 }
+if [ $count -eq 50 ]
 then
 echo Count is 50
 else
