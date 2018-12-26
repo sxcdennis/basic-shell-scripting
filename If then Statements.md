@@ -6,10 +6,13 @@ In this section we'll cover **if then**, **if else**, **if elif else**, and **bo
 
 # Video:
 
+https://youtu.be/TdP0HxtTXdU
 
 ## if then
+
 **if** a particular test is true, then perform a given set of actions. If it isn't true then don't perform those actions.
 Ending operations with fi- the opposite of if.
+
 **Syntax**
 
 ```
@@ -155,11 +158,11 @@ fi
   if [ "$n" = "1" ]
 then
   echo "You chose the number 1!"
-elif [ "$n" != "2" ]
+elif [ "$n" = "2" ]
 then
 echo "You chose the number 2!"
 else
-[ "$n" != "*" ]
+[ "$n" = "*" ]
 echo "You chose a value other than 1 or 2"
 fi
 
@@ -310,7 +313,7 @@ You chose a number not less than 25 or greater than 40.
 
 ```
 
-# Logical Negation  !
+## Logical Negation  !
 
 Logical negation *!* negates statements turning true statements to false and vise versa.
 

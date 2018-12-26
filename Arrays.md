@@ -1,8 +1,9 @@
 # Arrays
 Array is a variable which contains multiple values that may be of same type or of a different type. There are two types of arrays **indexed** array and **associative** arrays. *Associative* arrays can be defined using **-A** while *indexed* are created by using **-a**.  Array index starts with zero. In this section we'll talk about: **Creating, Adding, Deleting Arrays and Operations**
 
-# Videos
+# Video
 
+https://youtu.be/LJ_S1bKMpmc
 
 # Creating Arrays
 We can create an array by using several different ways.
@@ -342,7 +343,7 @@ array_name=(${array_name[*]} "value1" value2" "value3" "value*")
 ```
 
 #!/bin/bash
-# This add new values to exisitng array
+# This adds new values to exisitng array
 # We'll name this arrays6.sh
 declare -a Unix=( "Debian" "Red Hat" "Ubuntu" "Fedora" "CentOS" "FreeBSD")
 
@@ -386,7 +387,7 @@ unset Array_Name[value_number]
 ```
 
 #!/bin/bash
-# This remove values to a certain array
+# This remove values of a certain array
 # We'll name this arrays7.sh
 declare -a Unix=( "Debian" "Red Hat" "Ubuntu" "Fedora" "CentOS" "FreeBSD")
 
@@ -418,7 +419,7 @@ CentOS FreeBSD
 
 ```
 
-# Deleting Arrays
+## Deleting Arrays
 
 **Syntax**
 
@@ -434,7 +435,7 @@ unset Array_Name
 ```
 
 #!/bin/bash
-# This delete contents of an array
+# This deletes contents of an array
 # We'll name this arrays10.sh
 declare -a Unix=( "Debian" "Red Hat" "Ubuntu" "Fedora" "CentOS" "FreeBSD")
 
@@ -489,7 +490,7 @@ Debian Red Hat Ubuntu Fedora CentOS FreeBSD
 
 ```
 
-# Combining arrays
+## Combining arrays
 
 **Syntax**
 
@@ -505,7 +506,7 @@ New_arrayName=( "${array_name1[@]}" "${array_name2[@]}" "${array_name3[@]}" "${a
 ```
 
 #!/bin/bash
-# This will combine an arrays
+# This will combine arrays
 # We'll name this arrays9.sh
 declare -a Unix=( "Debian" "Red Hat" "Ubuntu" "Fedora" "CentOS" "FreeBSD")
 declare -a Shell=( "bash" "ksh" "jsh" "rsh" )

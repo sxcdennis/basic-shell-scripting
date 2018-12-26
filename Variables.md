@@ -5,6 +5,10 @@ As we progress through this section, some standard formatting is not input into 
 Also in the command line outputs, I do not mention using ```chmod``` so please take note of that.  
 # Videos
 
+pt1- https://youtu.be/GbxrrWVqsCY
+pt2- https://youtu.be/RVbTFTBrM7c
+pt3- https://youtu.be/RqPlfS_e4Lg
+
 # Define Variables
 
 To define variables in simple terms is **VARIABLE=Value**. (Note: There are no spaces between the **=** sign) <br>
@@ -159,7 +163,7 @@ Will produce the pathname along with the filename.
 If you call the variable it would output ```/home/scripts/test1.sh```
 
 
-##$n or $1-$9 or ${n}
+## $n or $1-$9 or ${n}
 
 These are whatever **named** parameters to which the script was called with.
 For example lets say I have a script named testpara1.sh :
@@ -728,7 +732,7 @@ If parameter is null or unset, nothing is substituted, otherwise the expansion o
 
 echo What is your name?
 read yourname
-echo ${yourname:+YOU HAVE NO NAME}"
+echo "${yourname:+YOU HAVE NO NAME}"
 
 ```
 

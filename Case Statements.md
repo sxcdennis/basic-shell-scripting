@@ -1,8 +1,10 @@
 # Case Statements
 
-Sometimes you want to make different paths upon a variable matching in a series of patterns. Although you can do that with *if then statements*, **case** statements are much cleaner. We end each *case* statements with **esac** which is case backwards. 
+Sometimes you want to make different paths upon a variable matching in a series of patterns. Although you can do that with *if then statements*, **case** statements are much cleaner. We end each *case* statements with **esac** which is case backwards.
 
 # Video:
+
+https://www.youtube.com/watch?v=xkn-du1jhgc
 
 ## case statements
 
@@ -75,16 +77,16 @@ space=$( df -h | awk '{ print $5 }' | sort -n | tail -n 1 | sed 's/%//' )
 
 case $space in
   [1-5]*)
-  echo "Plenty of disk space. You have $space % disk space left."
+  echo "Plenty of disk space. You have used $space % disk space!"
   ;;
   [6-7]*)
-  echo "There might be a problem in near future. You have $space % disk space left."
+  echo "There might be a problem in near future. You have used $space % disk space!"
   ;;
   8*)
-  echo "Maybe we should clear out some old files. You have $space % disk space left."
+  echo "Maybe we should clear out some old files. You have used $space % disk space!."
   ;;
   9*)
-  echo "We could have some serious issues. You have $space % disk space left."
+  echo "We could have some serious issues. You have used $space % disk space!"
   ;;
   esac
 
@@ -94,7 +96,7 @@ case $space in
 
 ```
 
-Plenty of disk space. You have 15% disk space left.
+Plenty of disk space. You have used 15% disk space!
 
 ```
 **case** statements can be powerful tools as you can see from the above example.

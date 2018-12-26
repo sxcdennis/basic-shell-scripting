@@ -3,6 +3,8 @@ These are just some simple tasks scripts that use random commands
 
 # Video:
 
+https://youtu.be/4HUJ2V330jI
+
 # Basic Tasks
 Create a new file named basicscripts1.bash
 The following is an example of basic tasks script:

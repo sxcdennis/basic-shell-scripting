@@ -1,6 +1,9 @@
 # The First Script
 For our first script, we'll just write a script that says "Hello World". Later, we'll make some variations
+
 # Video:
+
+https://youtu.be/x1IF6JGuHsY
 
 # Hello World Script
 The following is a guide to create your first "Hello World" script:

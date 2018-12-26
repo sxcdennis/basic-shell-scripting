@@ -4,6 +4,7 @@ Functions are a great way to reuse code. They are codes where you can call multi
 
 # Video:
 
+https://youtu.be/I1cthkuMS7s
 
 # Syntax
 
@@ -66,7 +67,7 @@ Hello I am a function
 
 ```
 
-#   !/bin/bash
+#!/bin/bash
 # An example of a function
 # We'll name this function2.sh
 
@@ -175,11 +176,11 @@ var_change (){
  a="global 1"
  b="global 2"
  echo
- echo "Before function is called: var1 is $b and var2 is $b"
+ echo "Before function is called: var1 is $a and var2 is $b"
  echo
  var_change
  echo
- echo "After function is called: var1 is $a1 and var2 is $b"
+ echo "After function is called: var1 is $a and var2 is $b"
 
 
 ```
@@ -201,7 +202,7 @@ As you can tell from the previous example, local variables are all within the fu
 
 ## Overriding commands
 It's possible to have a function name that you would normally use as command lines.
-For example, lets say everytime you call the **ls** command you want it to use **ls -ld**
+For example, lets say every time you call the **ls** command you want it to use **ls -ld**
 
 **Example:**
 ```
@@ -210,7 +211,7 @@ For example, lets say everytime you call the **ls** command you want it to use *
 # Name this orcs.sh
 
 ls () {
-  command ls -lh
+  command ls -ld
 }
 
 ls
@@ -233,17 +234,15 @@ It's common practice to have library files where you can call functions within t
 userdetails() {
         oldifs="$IFS"
         IFS=:            
-        read -p "Enter a user name to be searched:" uname   #read username
-        echo
-
-    read -r username pass uid gid comments homedir shell <<< "$(cat /etc/passwd | grep   "^$uname")"
-
-        echo  -e "Username is: $username"
-        echo  -e "User's ID: $uid"
-        echo  -e "User's GID: $gid"
-        echo  -e "User's Comments: $comments"
-        echo  -e "User's Home Directory: $homedir"
-        echo  -e "User's Shell: $shell"
+        read -p "Enter a user name to be searched:" uname
+        echo ""
+        read -r username pass uid gid comments homedir shell <<< "$(cat /etc/passwd | grep   "^$uname")"
+        echo "Username is: $username"
+        echo "User's ID: $uid"
+        echo "User's GID: $gid"
+        echo "User's Comments: $comments"
+        echo "User's Home Directory: $homedir"
+        echo "User's Shell: $shell"
         echo
         IFS="$oldifs"        
 }
@@ -270,7 +269,7 @@ source /path/to/library
 # This is an example of using library
 # name is calllib.sh
 
-/home/scripts/first.lib
+source /home/scripts/first.lib
 
 #calling function from library
 

@@ -5,6 +5,7 @@ A successful command returns a 0, while unsuccessful ones return non-zero. This 
 
 # Video:
 
+https://youtu.be/9ANSx_kDIXk
 
 # $? and exit
  We can use either **exit** or **$?** to show exit status.

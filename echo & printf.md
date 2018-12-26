@@ -7,6 +7,7 @@ Most of the definitions were taken from the manual pages of each command.
 
 # Video:
 
+https://youtu.be/ig000TShuok
 
 # echo
 

@@ -3,6 +3,8 @@ In this section we'll go over the following: Naming Conventions, Formatting, Fil
 
 # Video:
 
+https://youtu.be/UmnU88yTcss
+
 # Naming Conventions
 
 Typically people have a directory for all of their personal scripts. **Example:** I would put my scripts under ```/home/scripts```

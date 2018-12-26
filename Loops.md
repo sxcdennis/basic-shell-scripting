@@ -2,10 +2,11 @@
 
 In this section we'll go over loops which consist of **for, while, until** and **do**. Loops are exactly what they sound like- repeating tasks x amount of times.
 
-By now you should be able to understand how to execute scripts and do all scripting standards. I will not be including them from this point forward. If you still need help with that, I suggest you go back and read and practice them.
+By now you should be able to understand how to execute scripts and do all scripting standards. I will not be including them from this point forward. If you still need help with that, I suggest you go back and read/practice them.
 
 # Video
 
+ https://youtu.be/tF0Hjp7fqMw
 
 ## do and done
 
@@ -157,8 +158,8 @@ while [ "$a" != "exit" ]
 do
 echo "Please type something or type exit to quit"
 read a
-echo "You typed $a."
-
+echo "You typed $a ."
+done
 ```
 
 This will indefinitely loop until you type exit .
