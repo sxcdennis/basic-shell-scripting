@@ -51,7 +51,7 @@ I urge you to practice them on your own.
 
 
 ```
-### Examples of echo
+# Examples of echo
 
 ## -n
 This makes it so echo does *not* output a new line
@@ -232,9 +232,9 @@ or
 ```
 
 
-## Examples of printf
+# Examples of printf
 
-# printf with %s
+## printf with %s
 
 **Command Line:**
 
@@ -253,7 +253,7 @@ Hello root[root@localhost scripts]#
 
 ```
 
-# printf with \n
+## printf with \n
 
 **Command Line:**
 
@@ -274,7 +274,7 @@ root[root@localhost scripts]#
 
 ```
 
-# printf with \b
+## printf with \b
 
 **Command Line:**
 
@@ -293,7 +293,7 @@ HELL root[root@localhost scripts]#
 
 ```
 
-# printf with \t
+## printf with \t
 
 **Command Line:**
 

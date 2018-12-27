@@ -6,8 +6,11 @@ Also in the command line outputs, I do not mention using ```chmod``` so please t
 # Videos
 
 pt1- https://youtu.be/GbxrrWVqsCY
+
 pt2- https://youtu.be/RVbTFTBrM7c
+
 pt3- https://youtu.be/RqPlfS_e4Lg
+
 
 # Define Variables
 
@@ -45,7 +48,7 @@ echo
 echo End of Script
 ```
 
-As you can see for each output is a bit different. We first start by defining all the variables:
+As you can see, for each output is a bit different. We first start by defining all the variables:
 
 ```
 p=pwd
@@ -54,8 +57,8 @@ l=ll
 wo=whoami
 num=200
 ```
-Then run each one using **echo** and as you can see it just displays each **value**  <br>
-Next we follow up by using the application **expr** which prints  value of expression to standard output. As you can see we add it by 1.<br>
+Then run each one using **echo** and as you can see, it just displays each **value**  <br>
+Next we follow up by using the application **expr** which prints  value of expression to standard output. As you can see, we add it by 1.<br>
 Next we see each **Variable** alone<br>
 ```
 $p
@@ -63,7 +66,7 @@ $d
 $l
 $wo
 ```
-As you can see it just uses each of the **values** of each **variable** as commands. <br><br>
+As you can see, it just uses each of the **values** of each **variable** as commands. <br><br>
 
 
 # Input and Output (Interactive Scripts)
@@ -102,7 +105,7 @@ echo End of Script
 ```
 Notice how the variable for the previous example is closed by curly braces **{}**<br>
 If you were to use it without the curly braces, it would just think that you're variable is ```$NAME1.file``` instead of ```$NAME1``` <br>
-Also notice that there are double quotes **""** between commands. This is because without the quotes the arguments for the command would run differently.<br>
+Also, notice that there are double quotes **""** between commands. This is because without the quotes the arguments for the command would run differently.<br>
 For example lets say you run the command ```#touch my file.file``` you would create **two** files: my and file.file vs ```#touch "my file.file"``` which would create **one** file: my file.file
 
 # Special Variables

@@ -1,8 +1,8 @@
-# Functions:
+# Functions
 
-Functions are a great way to reuse code. They are codes where you can call multiplies times within a script( or even other script files ).
+Functions are a great way to reuse code. They are codes where you can call multiplies times within a script (or even other script files).
 
-# Video:
+# Video
 
 https://youtu.be/I1cthkuMS7s
 

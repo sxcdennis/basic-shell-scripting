@@ -392,7 +392,7 @@ fi
 File NOT FOUND!!
 
 ```
-Lets say you made the file by using ```touch /home/scripts/myfile.txt```
+Let's say you made the file by using ```touch /home/scripts/myfile.txt```
 
 Then your output would be ```File found!!```
 
