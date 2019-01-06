@@ -1,15 +1,19 @@
-# Backup File in System
+# Backup Files in System
+
 It is useful to backup systems by using *tar* and *gzip*.
-In this seciton we'll go over a simple soultion that will backup the ```/home/scripts``` and ``/home/scripts2/`` directories into ``/home/backup`` directory.
+In this section we'll go over a simple solution that will backup the ```/home/scripts``` and ``/home/scripts2/`` directories into ``/home/backup`` (create it) directory.
 
 # Video
 
+https://youtu.be/ylROFrX5QNQ
 
 
 ## Code
 
+**backup.sh**
+
 ```
-#!/bin/bash 
+#!/bin/bash
 tar cvf /home/backup/backup.tar /home/scripts/ /home/scripts2/
 gzip /home/backup/backup.tar
 
@@ -22,8 +26,7 @@ Now after this was created you can check to see if the gzip was created by using
 
 ```
 
--rw-r--r-- . 1 root root 1050105 DEC 12 15:32 backup.tar
--rw-r--r-- . 1 root root 550105 DEC 12 15:32 backup.tar.gz
+-rw-r--r-- . 1 root root 14175 DEC 12 15:32 backup.tar.gz
 
 ```
 
