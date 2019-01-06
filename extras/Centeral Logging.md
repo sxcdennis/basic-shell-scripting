@@ -4,8 +4,14 @@ Sometimes you want to show all the error messages into one file. The following s
 
 # Video
 
+https://youtu.be/b1P1jc6lvQg
+
+
+First you want to create the directory ```#mkdir /home/errors/```
 
 ## Code
+
+**filtermsg.sh**
 
 ```
 #!/bin/bash

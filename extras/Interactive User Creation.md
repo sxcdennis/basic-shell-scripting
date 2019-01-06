@@ -2,8 +2,14 @@
 
 The following script is a script to add users while checking if the UID and User exists or not using functions and loops.
 
+# Video
+
+https://youtu.be/FAVMgwoweI8
 
 ## Code
+
+**createuser.sh**
+
 
 ```
 

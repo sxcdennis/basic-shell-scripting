@@ -4,10 +4,12 @@ This script will disable accounts with the name test that have not been used for
 
 
 # Video
-
+https://youtu.be/VyRQgnI901k
 
 
 ## Code
+
+**disableoldusers.sh**
 
 ```
 #!/bin/bash

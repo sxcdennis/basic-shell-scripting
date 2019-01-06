@@ -4,6 +4,8 @@ There are several ways to pull data from files but in this section, we'll go ove
 
 # Video
 
+https://youtu.be/UfFX-HETb7Y
+
 # Log files
 There are several log files, but we'll only go over one of them: ```/var/log/messages ```
 
@@ -25,8 +27,14 @@ There are several log files, but we'll only go over one of them: ```/var/log/mes
 
  ```
 
+ To put some errors we use the command ```logger -t ```  
+
+ **Example:** ```logger -t error "Dennis is testing messages" ```
 
 ## Code
+
+**pulldata.sh**
+
 
  ```
 #!/bin/bash
@@ -38,17 +46,3 @@ cat /home/scripts/errormessages.txt
 
 
  ```
-
-
-## Output
-
- ```
-
-
-
-
- ```
-
-## Summary
-
- Since the output was nothing, that means no errors have occurred, but if there were errors it would show.

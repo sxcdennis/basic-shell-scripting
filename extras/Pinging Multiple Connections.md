@@ -3,7 +3,11 @@ Sometimes you may want to ping multiple connections. In this case we can make a 
 
 # Video
 
+https://youtu.be/oyhAx7rxP_c
+
 ## Code
+
+**multiping.sh**
 
 ```
 

@@ -1,13 +1,15 @@
 # Renaming Files
 
-Sometimes it can be useful to rename several files.
+Sometimes it can be useful to rename several files. This is an example of changing file extensions from txt to php.
 
 
 ## Video
 
-
+https://youtu.be/2UY4jhg1rJM
 
 ## Code
+
+**renamefiles.sh**
 
 ```
 #!/bin/bash

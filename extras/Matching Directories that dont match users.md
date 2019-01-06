@@ -1,4 +1,4 @@
-# Deleting Directories that don't match
+# Matching Directories that don't match users
 
 Sometimes there are directories that are in /home but don't belong there because they aren't directories that match /etc/passwd ( file that lists users ). The following script will
 match users from /etc/passwd and display which directories do not belong.
@@ -6,10 +6,14 @@ match users from /etc/passwd and display which directories do not belong.
 
 # Video
 
+https://youtu.be/PpgmcUr6mGc
 
 ## Code
 
+**matchusers.sh**
+
 ```
+
 #!/bin/bash
 
 for DIR in /home/*

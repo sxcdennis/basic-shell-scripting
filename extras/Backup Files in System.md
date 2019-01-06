@@ -9,7 +9,7 @@ In this seciton we'll go over a simple soultion that will backup the ```/home/sc
 ## Code
 
 ```
-
+#!/bin/bash 
 tar cvf /home/backup/backup.tar /home/scripts/ /home/scripts2/
 gzip /home/backup/backup.tar
 

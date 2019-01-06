@@ -2,10 +2,6 @@
 
 You can schedule tasks using cron jobs. You can also include scripts within your cron jobs.
 
-# Video
-
-
-
 ## Code
 
 ```
